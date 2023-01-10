@@ -5,31 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <title>Interactive rating component</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
     />
-
-    <title>Frontend Mentor | Interactive rating component</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <!-- Rating state start -->
 
-    How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
+    <div class="card">
+      <div class="circle">
+        <img src="images/icon-star.svg" alt="Star icon" />
+      </div>
+      <div class="inner-text">
+        <span class="lead">How did we do?</span>
+        <p class="para">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div class="circle-container">
+        <div class="circle">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+        <div class="circle">5</div>
+      </div>
+      <button class="btn">Submit</button>
+    </div>
 
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
 
-    <!-- You selected -->
-    <!-- Add rating here -->
-    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! -->
+    <img src="images/illustration-thank-you.svg" alt="Mobile art" />
+    <div class="rating">You selected NUM out of 5</div>
+    <span class="lead">Thank you!</span>
+    <p class="para">
+      We appreciate you taking the time to give a rating. If you ever need more
+      support, don't hesitate to get in touch!
+    </p>
 
     <!-- Thank you state end -->
   </body>
