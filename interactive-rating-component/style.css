@@ -18,10 +18,9 @@ body {
   background-color: var(--very-dark-blue);
   color: var(--medium-grey);
   display: flex;
-  flex-direction: column;
-  gap: 10rem;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .card {
@@ -97,16 +96,19 @@ body {
   cursor: pointer;
 }
 
-.card.thanks {
-  /* display: none; */
+.thanks {
   align-items: center;
   justify-content: space-between;
   text-align: center;
 }
 
-.rating {
+.rating-text {
   background-color: var(--medium-grey);
   color: var(--primary-color);
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
+}
+
+.hidden {
+  display: none;
 }
