@@ -15,4 +15,98 @@
 
 body {
   font-family: "Overpass", sans-serif;
+  background-color: var(--very-dark-blue);
+  color: var(--medium-grey);
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 25rem;
+  height: 25rem;
+  padding: 2.5rem;
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 1.5rem;
+}
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--medium-grey);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-grey);
+}
+
+.circle:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.inner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lead {
+  font-size: 1.75rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.circle-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.card.thanks {
+  /* display: none; */
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.rating {
+  background-color: var(--medium-grey);
+  color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
 }
