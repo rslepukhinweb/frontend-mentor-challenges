@@ -23,9 +23,11 @@ function clearCircles() {
 btn.addEventListener("click", submitRating);
 
 function submitRating() {
-  clearCards();
-  ratingText.textContent = `You selected ${rating} out of 5`;
-  thanks.classList.remove("hidden");
+  if (rating) {
+    clearCards();
+    ratingText.textContent = `You selected ${rating} out of 5`;
+    thanks.classList.remove("hidden");
+  }
 }
 
 function clearCards() {
