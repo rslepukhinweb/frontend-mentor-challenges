@@ -14,7 +14,7 @@
 
 body {
   font-family: "Kumbh Sans", sans-serif;
-  color: var(--text-color);
+  color: var(--dark-neutral-text);
   background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   display: flex;
   align-items: center;
@@ -70,6 +70,12 @@ body {
   align-items: flex-start;
 }
 
+.qa-section,
+.question,
+.answer {
+  width: 100%;
+}
+
 .question {
   font-size: 1rem;
   padding: 1rem 0;
@@ -77,10 +83,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .question:hover {
   color: var(--hover-color);
+  cursor: pointer;
 }
 
 .arrow {
@@ -93,10 +101,11 @@ body {
 
 .answer {
   color: var(--neutral-text);
+  padding: 1rem 0;
 }
 
 .selected {
-  color: var(--dark-neutral-text);
+  color: var(--text-color);
 }
 
 .hidden {
