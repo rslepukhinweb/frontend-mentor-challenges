@@ -1,0 +1,88 @@
+:root {
+  --text-color: hsl(238, 29%, 16%);
+  --hover-color: hsl(14, 88%, 65%);
+  --neutral-text: hsl(237, 12%, 33%);
+  --dark-neutral-text: hsl(240, 6%, 50%);
+  --divider: hsl(240, 5%, 91%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  color: var(--text-color);
+  background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 12px;
+}
+
+.card {
+  width: 75%;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.card > section {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.img-section {
+  position: relative;
+}
+
+.woman-art {
+  margin-left: -3rem;
+}
+
+.text-section {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.question {
+  font-size: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--divider);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 5rem;
+}
+
+.answer {
+  display: none;
+}
