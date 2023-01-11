@@ -79,10 +79,26 @@ body {
   align-items: center;
 }
 
+.question:hover {
+  color: var(--hover-color);
+}
+
 .arrow {
   margin-left: 5rem;
 }
 
+.arrow-rev {
+  transform: rotate(180deg);
+}
+
 .answer {
+  color: var(--neutral-text);
+}
+
+.selected {
+  color: var(--dark-neutral-text);
+}
+
+.hidden {
   display: none;
 }
