@@ -1,0 +1,91 @@
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --neutral: hsl(0, 6%, 24%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  height: 100vh;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+}
+
+.hero-text {
+  background: linear-gradient(
+    135deg,
+    from hsl(0, 0%, 100%),
+    to hsl(0, 100%, 98%)
+  );
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.text-box {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: var(--neutral);
+}
+
+span {
+  color: var(--desaturated-red);
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--soft-red);
+}
+
+form {
+  display: flex;
+  align-self: stretch;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--desaturated-red);
+  border-radius: 3rem;
+  font: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 0.75rem 2rem;
+  border-radius: 5rem;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  position: absolute;
+  top: -4px;
+  right: 0;
+  cursor: pointer;
+}
