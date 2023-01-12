@@ -25,7 +25,6 @@ body {
 
 .card {
   width: 75%;
-  height: 30rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,12 +41,18 @@ body {
   justify-content: center;
 }
 
-.img-section {
+.image-section {
   position: relative;
 }
 
 .woman-art {
-  margin-left: -3rem;
+  position: absolute;
+  left: -3rem;
+}
+
+.box-art {
+  position: absolute;
+  left: -5rem;
 }
 
 .text-section {
@@ -64,10 +69,10 @@ body {
 }
 
 .faq-container {
+  width: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .qa-section,
@@ -83,16 +88,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 
 .question:hover {
   color: var(--hover-color);
-  cursor: pointer;
 }
 
 .arrow {
   margin-left: 5rem;
+  cursor: pointer;
 }
 
 .arrow-rev {
@@ -110,4 +114,48 @@ body {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 1300px) {
+  body {
+    padding: 22.5rem 0;
+  }
+
+  .card {
+    flex-direction: column;
+    background-color: red;
+  }
+
+  .woman-art {
+    width: 20rem;
+  }
+
+  .box-art {
+    width: 5rem;
+    left: -2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 62.5%;
+  }
+
+  .answer {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+  }
+
+  .question {
+    font-size: 1.5rem;
+  }
+
+  .answer {
+    font-size: 1rem;
+  }
 }
