@@ -17,11 +17,15 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 .logo {
   margin-bottom: auto;
+}
+
+.hero-mobile {
+  display: none;
 }
 
 .hero-text {
@@ -94,6 +98,43 @@ button {
   cursor: pointer;
 }
 
-.hero-img img {
+.hero-img {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    align-self: start;
+  }
+
+  .hero-mobile {
+    display: inline;
+    width: 100%;
+  }
+
+  .hero-text {
+    align-items: center;
+  }
+
+  .hero-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: 62.5%;
+  }
+
+  .hero-text {
+    gap: 5rem;
+  }
+
+  .text-box {
+    gap: 5rem;
+  }
 }
